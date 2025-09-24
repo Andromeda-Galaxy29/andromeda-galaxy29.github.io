@@ -1,0 +1,71 @@
+div {
+    height: 280px;
+    border: 2px solid black
+}
+
+img {
+    width: 100px;
+}
+
+#train {
+    transform: translate(800px, 100px)
+}
+
+#traindiv:hover #train {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-name: go;
+}
+
+@keyframes go {
+    from {
+        transform: translate(800px, 100px) scale(100%)
+    }
+    to {
+        transform: translate(100px, 100px) scale(250%)
+    }
+}
+
+#snowman:hover #snow1 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: snow1;
+}
+@keyframes snow1 {
+    to {
+        transform: translate(100px, 150px) scale(160%)
+    }
+}
+
+#snowman:hover #snow2 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: snow2;
+}
+@keyframes snow2 {
+    to {
+        transform: translate(-4px, 70px) scale(130%)
+    }
+}
+
+#snowman:hover #snow3 {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: snow3;
+}
+@keyframes snow3 {
+    to {
+        transform: translate(-108px, 0px) scale(100%)
+    }
+}
+
+#snowman:hover #smile {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-name: smile;
+}
+@keyframes smile {
+    to {
+        transform: translate(-212px, -5px) scale(70%)
+    }
+}

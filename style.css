@@ -1,52 +1,65 @@
+@font-face {
+    font-family: "Pixel"; /* Choose a name for your font family */
+    src: url("path/to/your/PIXEL.TTF") format("ttf");
+}
+
 body {
-    font-family: Arial; 
-    color:darkslategray;
-    background-size: cover;
-    background-color: darkslateblue;
-}
+    font-family: Pixel;
+    font-size: 16px;
+    color: #ffca00;
 
-div {
-    padding: 8px;
-    margin: 4px;
-    background-color: whitesmoke;
-}
-div:hover {
-    background-color:white;
-}
+    image-rendering: pixelated;
 
-.top-div {
-    border-radius: 30px 30px 0 0;
-}
+    background-color: #0e0e0e;
 
-.mid-div {
-    border-radius: 0;
-}
-
-.bot-div {
-    border-radius: 0 0 30px 30px;
-}
-
-a:link {
-    color:dodgerblue;
-}
-a:hover {
-    color:deepskyblue;
-}
-a:visited {
-    color:slateblue;
-}
-a:active {
-    color:gold;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 h1 {
-    text-align: center;
+    font-weight: normal;
+    font-size: 32px;
+    text-shadow: 0 5px 10px #3a270c;
+    transition-duration: .2s;
+}
+h1:hover {
+    text-shadow: 0 5px 10px #6f4609;
+    transition-duration: .2s;
 }
 
-img {
-    border-radius: 15px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
+.window {
+    padding: 0;
+    margin: 8px;
+    box-shadow: 0 10px 20px #3a270c;
+    transition-duration: .2s;
+}
+.window:hover {
+    box-shadow: 0 10px 20px #6f4609;
+    transition-duration: .2s;
+}
+
+.window-title {
+    margin: 0;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffca00;
+    color: #0e0e0e;
+}
+
+.window-controls {
+    height: 14px;
+}
+
+.window-body {
+    margin: 0;
+    padding: 8px;
+
+    border-color: #ffca00;
+    border-style: solid;
+    border-width: 2px;
 }
