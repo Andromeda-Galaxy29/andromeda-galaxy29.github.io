@@ -1,3 +1,10 @@
+:root {
+    --primary: #ffca00;
+    --bright-glow: #6f4609;
+    --glow: #3a270c;
+    --background: #0e0e0e;
+}
+
 @font-face {
     font-family: "Pixel"; /* Choose a name for your font family */
     src: url("path/to/your/PIXEL.TTF") format("ttf");
@@ -6,11 +13,11 @@
 body {
     font-family: Pixel;
     font-size: 16px;
-    color: #ffca00;
+    color: var(--primary);
 
     image-rendering: pixelated;
 
-    background-color: #0e0e0e;
+    background-color: var(--background);
 
     padding-left: 10%;
     padding-right: 10%;
@@ -19,22 +26,22 @@ body {
 h1 {
     font-weight: normal;
     font-size: 32px;
-    text-shadow: 0 5px 10px #3a270c;
+    text-shadow: 0 5px 10px var(--glow);
     transition-duration: .2s;
 }
 h1:hover {
-    text-shadow: 0 5px 10px #6f4609;
+    text-shadow: 0 5px 10px var(--bright-glow);
     transition-duration: .2s;
 }
 
 .window {
     padding: 0;
     margin: 8px;
-    box-shadow: 0 10px 20px #3a270c;
+    box-shadow: 0 10px 20px var(--glow);
     transition-duration: .2s;
 }
 .window:hover {
-    box-shadow: 0 10px 20px #6f4609;
+    box-shadow: 0 10px 20px var(--bright-glow);
     transition-duration: .2s;
 }
 
@@ -47,8 +54,8 @@ h1:hover {
     align-items: center;
     justify-content: space-between;
 
-    background-color: #ffca00;
-    color: #0e0e0e;
+    background-color: var(--primary);
+    color: var(--background);
 }
 
 .window-controls {
@@ -59,7 +66,7 @@ h1:hover {
     margin: 0;
     padding: 8px;
 
-    border-color: #ffca00;
+    border-color: var(--primary);
     border-style: solid;
     border-width: 2px;
 }
