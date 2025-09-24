@@ -1,0 +1,10 @@
+.bio {
+    display: flex;
+    align-items: center;
+}
+
+.bio img {
+    width: auto;
+    height: 128px;
+    margin: 16px;
+}
