@@ -5,13 +5,8 @@
     --background: #101117;
 }
 
-@font-face {
-    font-family: "Pixel"; /* Choose a name for your font family */
-    src: url("path/to/your/PIXEL.TTF") format("ttf");
-}
-
 body {
-    font-family: Pixel;
+    font-family: Arial;
     font-size: 16px;
     color: var(--primary);
 
