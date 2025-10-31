@@ -100,8 +100,6 @@ a:active {
 .window-body {
     margin: 0;
     padding: 8px;
-
-    border: solid 2px var(--primary);
 }
 
 .bio {
