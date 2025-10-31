@@ -88,14 +88,14 @@ h1:hover {
     align-items: center;
 }
 
-.socials {
+.links {
     display: flex;
     align-items: center;
     justify-content: center;
     border-top: solid 2px var(--primary);
     border-bottom: solid 2px var(--primary);
 }
-.socials div {
+.links div {
     display: flex;
     flex-direction: column;
     align-items: center;
