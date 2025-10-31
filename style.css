@@ -95,9 +95,13 @@ h1:hover {
 .links {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-evenly;
     border-top: solid 2px var(--primary);
     border-bottom: solid 2px var(--primary);
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary) var(--background);
 }
 .links div {
     display: flex;
@@ -105,7 +109,7 @@ h1:hover {
     align-items: center;
     padding: 8px;
     margin: 8px;
-    max-width: 256px;
+    width: 256px;
     text-align: center;
 }
 
