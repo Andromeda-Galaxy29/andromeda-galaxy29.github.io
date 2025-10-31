@@ -10,12 +10,11 @@ body {
     font-size: 16px;
     color: var(--primary);
 
-    background-color: var(--background);
-    background-image: repeating-linear-gradient(
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0.2) 4px,
-        transparent 4px,
-        transparent 8px
+    background: repeating-linear-gradient(
+        #0d0e13,
+        #0d0e13 4px,
+        var(--background) 4px,
+        var(--background) 8px
     );
 
     padding-left: 10%;
