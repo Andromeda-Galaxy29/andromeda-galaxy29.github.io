@@ -22,11 +22,18 @@ footer {
 
 img {
     margin: 16px;
+    filter: drop-shadow(0 5px 5px var(--glow));
 }
 
 a {
     color: var(--primary);
     transition-duration: .2s;
+}
+a::before {
+    content: "[";
+}
+a::after {
+    content: "]";
 }
 a:hover {
     text-shadow: 0 5px 10px var(--glow);
@@ -40,11 +47,6 @@ a:active {
 h1 {
     font-size: 32px;
     text-shadow: 0 5px 10px var(--glow);
-    transition-duration: .2s;
-}
-h1:hover {
-    text-shadow: 0 5px 10px var(--bright-glow);
-    transition-duration: .2s;
 }
 
 .pixel-art, .window-controls {
@@ -122,4 +124,5 @@ h1:hover {
 }
 .icon-link img {
     margin: 6px;
+    filter: none;
 }
