@@ -16,6 +16,10 @@ body {
     padding-right: 10%;
 }
 
+footer {
+    border-top: solid 2px var(--primary);
+}
+
 img {
     margin: 16px;
 }
@@ -90,7 +94,7 @@ h1:hover {
 
 .links {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     border-top: solid 2px var(--primary);
     border-bottom: solid 2px var(--primary);
@@ -101,4 +105,16 @@ h1:hover {
     align-items: center;
     padding: 8px;
     margin: 8px;
+    max-width: 256px;
+}
+
+.icon-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.icon-link img {
+    margin: 6px;
 }
