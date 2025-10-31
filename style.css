@@ -11,6 +11,12 @@ body {
     color: var(--primary);
 
     background-color: var(--background);
+    background-image: repeating-linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2) 4px,
+        transparent 4px,
+        transparent 8px
+    );
 
     padding-left: 10%;
     padding-right: 10%;
@@ -20,9 +26,14 @@ footer {
     border-top: solid 2px var(--primary);
 }
 
+h1 {
+    font-size: 32px;
+    text-shadow: 0 2px 10px var(--glow);
+}
+
 img {
     margin: 16px;
-    filter: drop-shadow(0 5px 5px var(--glow));
+    filter: drop-shadow(0 2px 5px var(--glow));
 }
 
 a {
@@ -42,11 +53,6 @@ a:hover {
 a:active {
     text-shadow: 0 5px 10px var(--bright-glow);
     transition-duration: .2s;
-}
-
-h1 {
-    font-size: 32px;
-    text-shadow: 0 5px 10px var(--glow);
 }
 
 .pixel-art, .window-controls {
