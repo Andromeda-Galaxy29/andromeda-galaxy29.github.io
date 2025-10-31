@@ -55,12 +55,22 @@ h1 {
 
 .window {
     padding: 0;
-    margin: 12px;
+    margin: 16px;
+    transform: scale(.96);
     box-shadow: 0 10px 20px var(--glow);
     transition-duration: .2s;
 }
+.window img {
+    transform: scale(calc(1 / .96));
+    transition-duration: .2s;
+}
 .window:hover {
+    transform: scale(1);
     box-shadow: 0 10px 20px var(--bright-glow);
+    transition-duration: .2s;
+}
+.window:hover img {
+    transform: scale(1);
     transition-duration: .2s;
 }
 
