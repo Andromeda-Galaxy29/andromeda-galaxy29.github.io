@@ -7,27 +7,30 @@
     <title>AndromedaGalaxy29</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="media/img/favicon.png">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <h1>> Andromeda's website</h1>
-    <div class="window">
+    <div class="window" id="1">
         <div class="window-title">
             Bio
-            <img class="window-controls" src="media/img/controls.png" alt="Window controls">
+            <img class="window-controls" src="media/img/controls.png" onclick="toggleWindow(1)" alt="Window controls">
         </div>
-        <div class="window-body bio">
-            <img src="media/img/avatar.png" width="128px" alt="Avatar">
-            <div>
-                <h1>AndromedaGalaxy29</h1>
-                <p>You can also call me: Andromeda, Andro, Andrew</p>
-                <p>Hi! I'm Andro, a programmer and artist. Welcome to my website!</p>
+        <div class="window-body">
+            <div class="bio">
+                <img src="media/img/avatar.png" width="128px" alt="Avatar">
+                <div>
+                    <h1>AndromedaGalaxy29</h1>
+                    <p>You can also call me: Andromeda, Andro, Andrew</p>
+                    <p>Hi! I'm Andro, a programmer and artist. Welcome to my website!</p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="window">
+    <div class="window" id="2">
         <div class="window-title">
             Profiles
-            <img class="window-controls" src="media/img/controls.png" alt="Window controls">
+            <img class="window-controls" src="media/img/controls.png" onclick="toggleWindow(2)" alt="Window controls">
         </div>
         <div class="window-body">
             <p>Here's where you can find me:</p>
@@ -55,10 +58,10 @@
             </div>
         </div>
     </div>
-    <div class="window">
+    <div class="window" id="3">
         <div class="window-title">
             Projects
-            <img class="window-controls" src="media/img/controls.png" alt="Window controls">
+            <img class="window-controls" src="media/img/controls.png" onclick="toggleWindow(3)" alt="Window controls">
         </div>
         <div class="window-body">
             <p>Stuff I worked on:</p>
