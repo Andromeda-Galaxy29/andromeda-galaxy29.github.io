@@ -16,6 +16,7 @@ body {
         var(--background) 4px,
         var(--background) 8px
     );
+    background-attachment: fixed;
 
     padding-left: 10%;
     padding-right: 10%;
@@ -100,6 +101,7 @@ a:active {
 .window-body {
     margin: 0;
     padding: 8px;
+    backdrop-filter: blur(2px);
 }
 
 .bio {
